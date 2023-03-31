@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Fantasy Books</title>
+    <link rel="icon" href="./imgs/logo-mobile.svg"> 
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style_index_mobilefirst.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo"> 
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo"> Categorias </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">TERROR</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">FANTASIA</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">SUSPENSE</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">SCI-FI</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">AVENTURA</a>
+                </li>
+            </ul>
+
+            <a href="#"><img src="./imgs/logo-mobile.svg" alt="logo da Dark fantasy books" class="container__logo"></a>
+            <a href="#"><img src="./imgs/Ativo 8logo escrita df.png" alt="logo da Dark fantasy books" class="container__logo2"></a>
+        </div>
+
+        <ul class="opçoes">
+            <input type="checkbox" id="opçoes-menu" class="opçoes__botao">
+            <label for="opçoes-menu" class="opçoes__rotulo">
+                <li class="opçoes__item"> Categorias </li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">TERROR</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">FANTASIA</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">SUSPENSE</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">SCI-FI</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">AVENTURA</a>
+                </li>
+            </ul>
+
+            <li class="opçoes__item"> <a href="#" class="opçoes__link"> Favoritos </a></li>
+            <li class="opçoes__item"> <a href="#" class="opçoes__link"> Minha estante </a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#">
+                <img src="./imgs/favoritos.png" alt="Meus favoritos" class="container__imagem container__imagem__favoritos-transparente">
+            </a>
+            <a href="#" class="container__link">
+                <span class="imagem__efeito__compras" title="Minha Sacola"></span>
+                <!--<img src="./imgs/compras (1).png" alt="Sacola de compras" class="container__imagem"> -->
+                <p class="container__texto">Minha Sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <span class="imagem__efeito" title="Login"></span>
+                <!--
+                <img src="./imgs/perfil.png" alt="Meu Perfil" class="container__imagem"> -->
+                <p class="container__texto">Meu Perfil</p>
+            </a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        <div class="banner__bg"></div>
+    </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel__titulo"> últimos lançamentos:</h2>
+        <div class="carrosel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"> <img src="./imgs/lovecraft.jpg" alt="livro sobre os melhores contos de H.P. Lovecraft"></div>
+                <div class="swiper-slide"><img src="./imgs/o iluminado.jpg" alt="O Iluminado, livro de Stephen King"></div>
+                <div class="swiper-slide"><img src="./imgs/dracula capa.jpg"  alt="Dracula, livro de Bram Stoker"></div>
+                <div class="swiper-slide"><img src="./imgs/o hobbit capa.jpg"  alt="O hobbit, livro de J.R.R. Tolkien"></div>
+                <div class="swiper-slide"><img src="./imgs/blade runner.jpg"  alt="Blade Runer, livro de Philipp K. Dick."></div>
+                <div class="swiper-slide"><img src="./imgs/alien.png"  alt="Alien, livro de Tim Lebbon"></div>
+                <div class="swiper-slide"><img src="./imgs/junjito.png"  alt="Uzumaki, Manga de Junji Ito"></div>
+                <div class="swiper-slide"><img src="./imgs/coraline.png"  alt="Coraline, Livro de Neil Gaiman"></div>
+                </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            
+            <div class="card">
+                <!--Primeira linha-->
+                <div class="card__descriçao">
+                    <!--primeira coluna-->
+                    <div class="descriçao">
+                        <h3 class="descriçao__titulo"> Explore por categorias...</h3>
+                        <h2 class="descriçao__titulo__livro">Terror</h2>
+                        <p class="descriçao__texto">Do Slasher ao psicologico e sobrenatural. Conheça os titulos
+                            mais aclamados do gênero.</p>
+                    </div>
+                    <!--Segunda coluna-->
+                    <img src="./imgs/terror simbolop.png" class="descriçai__imagem">
+                </div>
+            
+
+                <!--segunda linha-->
+                <div class="card__botoes">
+                    <ul class="botoes">
+                        <li class="botoes__item"><!--<img src="./imgs/favoritos.png" alt="Favoritar Livro">-->
+                            <input type="checkbox" id="heart" class="botoes__favorito">
+                            <label for="heart" class="botoes__favorito__rotulo">
+                                <span class="imagem__efeito__favorito" title="Adicionar aos Favoritos"></span>
+                            </label>
+                        <li class="botoes__item"><!--<img src="./imgs/compras (1).png" alt="Adicionar ao carrinho">-->
+                            <span class="imagem__efeito__compras" title="Minha Sacola"></span>
+                        </li>
+                    </ul>
+                
+                    <!--Segunda coluna-->
+                    <a href="#" class="botoes__ancora">Explorar</a>
+                </div>
+            </div>    
+    </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel__titulo"> Mais Vendidos:</h2>
+
+        <div class="carrosel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                        
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"> <img src="./imgs/narnia.png" alt="As crônicas de Narnia, Livro de C.S. Lewis"></div>
+                    <div class="swiper-slide"> <img src="./imgs/it.jpg" alt="It, livro de Stephen King"></div>
+                    <div class="swiper-slide"><img src="./imgs/mundo perdido.jpg" alt="O mundo perdido, livro de Sir Arthur Conan Doyle"></div>
+                    <div class="swiper-slide"><img src="./imgs/o corvo capa.jpg"  alt="O corvo, livro de Edgar Alan Poe"></div>
+                    <div class="swiper-slide"><img src="./imgs/lotr.jpg"  alt="O senhor dos aneis, livro de J.R.R. Tolkien"></div>
+                    <div class="swiper-slide"><img src="./imgs/battle royale.png"  alt="Battle Royale, Livro de Koushun Takami"></div>
+                    <div class="swiper-slide"><img src="./imgs/o medico e o monstro.png"  alt="O Medico e o Monstro, Livro de Robert Louis Stevenson"></div>
+                    <div class="swiper-slide"><img src="./imgs/alice.png"  alt="Alice no Pais das Maravilhas, Livro de Lewis Carrol"></div>
+                 </div>
+                    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                    
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+                    
+            <div class="card">
+                <!--Primeira linha-->
+                <div class="card__descriçao">
+                    <!--primeira coluna-->
+                    <div class="descriçao">
+                        <img src="./imgs/Estrelinhas.svg">
+                        <h3 class="descriçao__titulo"> Autor do Mês</h3>
+                        <h2 class="descriçao__titulo__livro">J.R.R. Tolkien</h2>
+                        <p class="descriçao__texto">Escritor e Filólogo, conheça mais obras do autor mais influente 
+                        de todos os tempos do gênero da alta fantasia.</p>
+                    </div>
+                        <!--Segunda coluna-->
+                        <img src="./imgs/Tolkien-color.png" class="descriçao__imagem">
+                </div>
+                    
+
+                <!--segunda linha-->
+                <div class="card__botoes">
+                    <ul class="botoes">
+                        <li class="botoes__item"><!--<img src="./imgs/favoritos.png" alt="Favoritar Livro">-->
+                            <input type="checkbox" id="heart2" class="botoes__favorito">
+                            <label for="heart2" class="botoes__favorito__rotulo">
+                                <span class="imagem__efeito__favorito" title="Adicionar aos Favoritos"></span>
+                            </label>               
+                        </li>
+                        <li class="botoes__item"><!--<img src="./imgs/compras (1).png" alt="Adicionar ao carrinho">-->
+                            <span class="imagem__efeito__compras" title="Minha Sacola"></span>
+                        </li>
+                    </ul>
+                        
+                    <!--Segunda coluna-->
+                    <a href="#" class="botoes__ancora">Explorar</a>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="topicos__lista">
+                <li class="topico__item"> <a class="topico__link" href="#">Slasher</a></li>
+                <li class="topico__item"> <a class="topico__link" href="#">Fantasia</a></li>
+                <li class="topico__item"> <a class="topico__link" href="#">Sobrenatural</a></li>
+                <li class="topico__item"> <a class="topico__link" href="#">Medieval</a></li>
+                <li class="topico__item"> <a class="topico__link" href="#">Suspense</a></li>
+                <li class="topico__item"> <a class="topico__link" href="#">Mistério</a></li>
+                <li class="topico__item"> <a class="topico__link" href="#">Magia</a></li>
+            </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descriçao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" class="contato__email" placeholder="Cadastre seu e-mail"> 
+    </section>
+
+    <hr>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Dark Fantasy Books</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Privacidade e Termos</li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Política de Pagamento</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Política de Privacidade</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Trocas e Devoluções</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Mapa do Site</li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Loja</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Livros</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Gêneros</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Itens Exclusivos</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Informaçôes</li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Imprensa</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Biblioteca</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Parceiros</a>
+            </li>
+            <li class="lista-rodape__item">
+                <a href="#" class="lista-rodape__link">Fale Conoso</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+        const swiper = new Swiper('.swiper', {
+        speed: 400,
+        spaceBetween: 10,
+        slidesPerView:3,
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',        }
+        
+        });
+
+    </script>
+</body>
+</html>

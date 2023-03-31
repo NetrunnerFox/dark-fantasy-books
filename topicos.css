@@ -1,0 +1,70 @@
+.topicos{
+    background:url(./imgs/bg-books.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.topicos__titulo{
+    color: var(--amarelo-df);
+    font-weight: 500;
+    text-shadow: 2px 1px 4px rgba(231, 226, 139, 0.507);
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+
+.topicos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topico__item{
+    margin: 2em 0.5em;
+}
+
+.topico__link{
+    color: var(--cor-de-fundo);
+    text-decoration: none;
+    background: var(--amarelo-df);
+    padding: 1em;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 1024px){
+
+    .topicos__titulo{
+        font-size: 24px;
+    }
+
+    .topico__link{
+        font-size: 24px;
+    }
+
+    .topicos__lista{
+        padding: 1em 9em;
+    }
+
+    .topico__item{
+        padding: 0.5em 0;
+    }
+
+    .topico__link:hover{
+        background: var(--cor-de-fundo);
+        color: var(--amarelo-df);
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .topicos{
+        padding: 3em 25vw;
+    }
+
+    .topicos__lista{
+        padding: 1em 3em;
+    }
+}

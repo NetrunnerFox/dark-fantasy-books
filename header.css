@@ -1,0 +1,234 @@
+.cabeçalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url(./imgs/Menu\ df.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    }
+
+    .cabeçalho{
+        background-color: var(--cor-principal);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .container__logo{
+        padding: 1em;
+    }
+
+    .container__logo2{
+        height: 40px;
+        display: none;
+    }
+
+    .container__imagem{
+        padding: 1em;
+    }
+
+    .lista-menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 60vw;
+    }
+
+    .container__botao:checked ~ .lista-menu{
+        display: block;
+    }
+
+    .lista-menu__titulo, .lista-menu__item{
+        background-color: var(--cor-de-fundo);
+        padding: 1em;
+    }
+
+    .lista-menu__titulo{
+        color: var(--branco);
+        font-weight: 700;
+
+    }
+
+    .lista-menu__link{
+        background:var(--amarelo-df);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .container__botao{
+        display: none;
+    }
+
+    .container__titulo{
+        display: none;
+    }
+
+    .opçoes{
+        display: none;
+    }
+
+    .container__texto{
+        display: none;
+    }
+
+    .container__botao:checked ~ .container__rotulo > .cabeçalho__menu-hamburguer{
+        background-image: url(./imgs/Menu\ df\ pressed.png);
+    }
+
+    .container__botao:checked ~ .container__rotulo{
+        background: var(--amarelo-df);
+    }
+
+    .swiper-pagination-bullet-active{
+        background-color: var(--amarelo-df);
+    }
+
+    .container__link{
+        padding: 1em;
+    }
+
+    .imagem__efeito{
+        width: 33px;
+        height: 33px;
+        background: url(./imgs/perfil.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;  
+        transition: 0.5s;
+    }
+
+    .imagem__efeito__compras{
+        width: 33px;
+        height: 33px;
+        background: url(./imgs/compras\ \(1\).png);
+        background-position: center;
+        background-repeat: no-repeat;
+        display: inline-block;  
+        transition: 0.5s;
+    }
+
+    @media screen and (min-width: 1024px){        
+        .container__titulo, .container__titulo__negrito{
+            font-family: var(--fonte-secundaria);
+            font-size: 30px;
+        }
+
+        .container__logo2{
+            display: block;
+        }
+
+        .container__titulo{
+            font-weight: 400;
+            display: block;
+        }
+
+        .container__titulo__negrito{
+            font-weight: 700;
+        }
+
+        .opçoes{
+            display: flex;
+        }
+
+        .opçoes__item{
+            padding: 0 1em;
+            color: var(--amarelo-df);
+            transition:0.5s;
+        }
+
+        .opçoes__item:hover{
+            color: var(--branco);
+            cursor: pointer ;
+        }
+
+        .opçoes__link{
+            text-decoration: none;
+            color: var(--amarelo-df);
+            transition: 0.5s;
+        }
+
+        .opçoes__link:hover{
+            color: var(--branco);
+        }
+
+        .container__imagem__favoritos-transparente{
+            display: none;
+        }
+
+        .cabeçalho__menu-hamburguer{
+            display: none;
+        }
+
+        .opçoes__botao:checked ~ .lista-menu{
+            display: block;
+            width: auto;
+        }
+
+        .opçoes__botao{
+            display: none;
+        }
+
+        .opçoes__botao:checked ~ .opçoes__rotulo > .opçoes__item{
+            background: var(--amarelo-df);
+            color: var(--cor-de-fundo);
+        }
+
+        .opçoes__item{
+            padding: 2em 1em;
+        }
+
+        .lista-menu__item{
+            padding-right: 1.5em;
+        }
+
+        .lista-menu__item:hover{
+            background: var(--amarelo-df);
+        }
+        
+        .lista-menu__item:hover > .lista-menu__link{
+            -webkit-text-fill-color: var(--cor-de-fundo);
+            text-decoration: none;
+        }
+
+        .imagem__efeito__compras:hover{
+            background: url(./imgs/compras-white.png);
+            cursor: pointer;
+        }
+
+        .imagem__efeito:hover{
+            background: url(./imgs/perfil-red.png);
+        }
+    }
+
+    @media screen and (min-width: 1728px){
+
+        .container__link{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--preto);
+        }
+
+        .cabeçalho{
+            padding: 0 2em ;
+        }
+
+        .opçoes{
+            margin-right: auto;
+        }
+
+        .container__texto{
+            display: block;
+            padding: 0 0.5em;
+            color: var(--amarelo-df);
+        }
+    }
