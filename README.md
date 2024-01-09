@@ -12,6 +12,9 @@ e possui carrosséis que listam os últimos lançamentos a chegarem na loja e os
 - Css
 - Swiper JS
 
+## Veja o projeto:
+você pode visualizar o projeto pelo seguinte link: [Ver projeto](https://netrunnerfox.github.io/dark-fantasy-books/)
+
 ## Contato
 Você pode me encontrar no linkedin pelo link [Gabriel Queiroz](https://www.linkedin.com/in/gabriel-de-queiroz-24146b236 "Perfil de Gabriel Queiroz").
 
